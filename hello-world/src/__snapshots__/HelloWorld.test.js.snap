@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`class HelloWorld extends _react.Component {
+    constructor(props) {
+        super(props);
+        this.state = { greeting: 'Hello' };
+        this.frenchify = this.frenchify.bind(this);
+        this.removeGreeting = this.removeGreeting.bind(this);
+    }
+
+    frenchify() {
+        this.setState({ greeting: 'Bonjour' });
+    }
+
+    removeGreeting() {
+        this.props.removeGreeting(this.props.name);
+    }
+
+    render() {
+        return (
+            _react2.default.createElement('div', { className: 'HelloWorld', __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this },
+                this.state.greeting, ' ', this.props.name, '!',
+                _react2.default.createElement('br', { __source: { fileName: _jsxFileName, lineNumber: 24 }, __self: this }),
+                _react2.default.createElement('button', { className: 'frenchify', onClick: this.frenchify, __source: { fileName: _jsxFileName, lineNumber: 25 }, __self: this }, 'Frenchify!'),
+                _react2.default.createElement('br', { __source: { fileName: _jsxFileName, lineNumber: 26 }, __self: this }),
+                _react2.default.createElement('button', { className: 'remove', onClick: this.removeGreeting, __source: { fileName: _jsxFileName, lineNumber: 27 }, __self: this }, 'Remove!')));
+
+
+    }} renders and matches our snapchat 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="HelloWorld"
+>
+    Hello
+     
+    Person
+    !
+    <br />
+    <button
+        className="frenchify"
+        onClick={[Function]}
+    >
+        Frenchify!
+    </button>
+    <br />
+    <button
+        className="remove"
+        onClick={[Function]}
+    >
+        Remove!
+    </button>
+</div>,
+  "nodes": Array [
+    <div
+      className="HelloWorld"
+>
+      Hello
+       
+      Person
+      !
+      <br />
+      <button
+            className="frenchify"
+            onClick={[Function]}
+      >
+            Frenchify!
+      </button>
+      <br />
+      <button
+            className="remove"
+            onClick={[Function]}
+      >
+            Remove!
+      </button>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <HelloWorld
+        name="Person"
+        removeGreeting={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": HelloWorld {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "frenchify": [Function],
+        "props": Object {
+          "name": "Person",
+          "removeGreeting": [Function],
+        },
+        "refs": Object {},
+        "removeGreeting": [Function],
+        "state": Object {
+          "greeting": "Hello",
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="HelloWorld"
+>
+          Hello
+           
+          Person
+          !
+          <br />
+          <button
+                    className="frenchify"
+                    onClick={[Function]}
+          >
+                    Frenchify!
+          </button>
+          <br />
+          <button
+                    className="remove"
+                    onClick={[Function]}
+          >
+                    Remove!
+          </button>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="HelloWorld"
+>
+          Hello
+           
+          Person
+          !
+          <br />
+          <button
+                    className="frenchify"
+                    onClick={[Function]}
+          >
+                    Frenchify!
+          </button>
+          <br />
+          <button
+                    className="remove"
+                    onClick={[Function]}
+          >
+                    Remove!
+          </button>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <HelloWorld
+    name="Person"
+    removeGreeting={[Function]}
+/>,
+}
+`;
